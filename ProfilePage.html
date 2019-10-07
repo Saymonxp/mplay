@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background:#ffffff;
+}
+.card {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:300px;
+    min-height:400px;
+    background:rgb(0, 0, 0);
+    box-shadow:0 20px 50px rgba(0,0,0,.1);
+    border-radius:10px;
+    transition:0.5s;
+}
+.card:hover {
+    box-shadow:0 30px 70px rgba(0,0,0,.2);
+}
+.card .box {
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    width:100%;
+}
+.card .box .img {
+    width:120px;
+    height:120px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+}
+.card .box .img img {
+    width:100%;
+    height:100%;
+}
+.card .box h2 {
+    font-size:20px;
+    color:#ffffff;
+    margin:20px auto;
+}
+.card .box h2 span {
+    font-size:14px;
+    background:#e91e63;
+    color:rgb(0, 0, 0);
+    display:inline-block;
+    padding:4px 10px;
+    border-radius:15px;
+}
+.card .box p {
+    color:#ffffff;
+}
+.card .box span {
+    display:inline-flex;
+}
+.card .box ul {
+    margin:0;
+    padding:0;
+}
+.card .box ul li {
+    list-style:none;
+    float:left;
+}
+
+.card .box ul li:hover a {
+    color:#e91e63;
+    transform:rotateY(360deg);
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "style.css">
+    <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet">
+    <title>Pagina de usuario</title>
+</head>
+
+<body>
+
+    <div class = "profile_card">
+
+        <div class = "image-container">
+            <img src = "user.png" style = "width: 100%">
+        </div>
+
+        <div class = "title">
+            <h2>Hell's angel</h2>
+        </div>
+
+        <div class = "main-container">
+            <p><i class = "fa fa-diamond info_d"></i> 6969 Diamantes </p>
+            <p><i class = "fa fa-unlock-alt info"></i> Contraseña: incrackeable </p>
+            <p><i class = "fa fa-at info"></i> Correo: prueba@nogmail.com </p>
+            <p><i class = "fa fa-mobile info_cel"></i>  Celular: 4204206969 </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
